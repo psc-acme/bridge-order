@@ -1,0 +1,37 @@
+{
+    "name": "psc-acme/bridge-order",
+    "description": "Package bridge-order for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\BridgeOrder\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "doctrine/doctrine-bundle": "^2.13",
+        "doctrine/dbal": "^4.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "infection/infection": "^0.27"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
